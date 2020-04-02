@@ -1,5 +1,7 @@
 package io.mulshankar13.datastructures.tree;
 
+import java.util.Scanner;
+
 class Node {
 	int value;
 	Node leftNode;
@@ -25,11 +27,28 @@ class Node {
 			return null;
 		}
 		if (value > root.value) { // insert into the left sub tree
-			root.leftNode = insert(root.leftNode, value);
-		} else if (value < root.value) { // insert into the right sub tree
 			root.rightNode = insert(root.rightNode, value);
+		} else if (value < root.value) { // insert into the right sub tree
+			root.leftNode = insert(root.leftNode, value);
 		}
 		return root;
+	}
+
+	static void initializeTree() {
+		Scanner scanner = new Scanner(System.in);
+		int key = scanner.nextInt();
+		Node root = null;
+		root = Node.insert(root, key);
+		key = scanner.nextInt();
+		Node.insert(root, key);
+		key = scanner.nextInt();
+		Node.insert(root, key);
+		key = scanner.nextInt();
+		Node.insert(root, key);
+		System.out.println(" root........." + root);
+		// Node searchNode = searchBST(root, key); // search a tree
+		// System.out.println(" Node found ...." + searchNode);
+		scanner.close();
 	}
 
 	/**

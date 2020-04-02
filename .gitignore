@@ -9,7 +9,7 @@ datastructures/.project
 datastructures/.settings/org.eclipse.core.resources.prefs
 datastructures/.settings/org.eclipse.jdt.core.prefs
 datastructures/.settings/org.eclipse.m2e.core.prefs
-datastructures/target/*
+./datastructures/target/*
 datastructures/target/classes/META-INF/MANIFEST.MF
 datastructures/target/classes/META-INF/maven/io.mulshankar13/datastructures/pom.properties
 datastructures/target/classes/META-INF/maven/io.mulshankar13/datastructures/pom.xml
