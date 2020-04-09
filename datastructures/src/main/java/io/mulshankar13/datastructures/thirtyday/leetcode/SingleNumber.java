@@ -1,4 +1,4 @@
-package io.mulshankar13.datastructures.leetcode;
+package io.mulshankar13.datastructures.thirtyday.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
